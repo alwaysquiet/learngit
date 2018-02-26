@@ -7,3 +7,12 @@
 查看仓库状态 git status
 
 查看文件具体做了那些修改 git diff readme.txt
+
+版本回退
+    git log     命令
+    显示从最近到最远的提交日志，
+    git log --pretty=oneline 查看简略日志信息
+
+
+
+
