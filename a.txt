@@ -8,10 +8,16 @@
 
 查看文件具体做了那些修改 git diff readme.txt
 
-版本回退
+版本回退  -- 时光穿梭
     git log     命令
     显示从最近到最远的提交日志，
     git log --pretty=oneline 查看简略日志信息
+
+    git reset --hard HEAD^ 回退到上一个版本
+
+    git reset --hard <commit id> 撤销回退，去往某个版本，哈哈哈
+
+    git reflog 记录每一次的命令   重返未来
 
 
 
