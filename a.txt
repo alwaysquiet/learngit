@@ -1,0 +1,9 @@
+初始化一个仓库，git init
+添加文件到仓库，分两步
+第一步，使用命令git add <file> ，可以反复提交多次，添加多个文件
+第二部，使用git commit，完成
+        git commit -m '提交说明，任意填写'
+
+查看仓库状态 git status
+
+查看文件具体做了那些修改 git diff readme.txt
