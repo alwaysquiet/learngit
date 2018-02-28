@@ -38,3 +38,26 @@
 
 git checkout -- file 可以丢弃工作区的修改
     -- 没有 -- 就变成了 创建一个新分支
+
+首先要关联一个远程库
+使用命令    git remote add origin git@server-name:path/repo-name.git
+
+例如
+    远程库           SSH  git@github.com:alwaysquiet/learngit.git
+    git remote add origin git@github.com:alwaysquiet/learngit.git
+
+关联后 使用git push -u origin master 第一次推送master分支的所有内容
+
+此后每次提交，只要有必要，就可以使用命令git push origin master推送最新修改
+
+git push origin master 把本地master分支的最新修改推送至GitHub
+
+分布式版本库
+
+
+由于远程库是空的，我们第一次推送 master 分支时，加上了-u 参数，Git 不但会把本地的 master 分支内容推
+送的远程新的 master 分支，还会把本地的 master 分支和远程的 master 分支关联起来，在以后的推送或者拉
+取时就可以简化命令。
+
+
+
